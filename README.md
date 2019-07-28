@@ -8,7 +8,13 @@ $ export COMPOSE_FILE=docker-compose.development.yml
 
 ```
 // run
-$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt compile && sbt run"
+$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt run"     
+
+// sbt 更新時実行
+$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt reload"   
+
+// test
+$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt test"   
 ```
 
 ## 備考

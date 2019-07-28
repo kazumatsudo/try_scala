@@ -5,6 +5,7 @@ services:
     build:
       context: ./scala-sbt
       dockerfile: Dockerfile
+    command: bash -c "cd /usr/app/ && sbt ~testQuick"
     container_name: scala-sbt
     env_file:
       - ../.env/development.env
