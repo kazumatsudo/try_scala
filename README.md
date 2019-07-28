@@ -6,15 +6,12 @@ $ export COMPOSE_FILE=docker-compose.development.yml
 
 ## 実行
 
-```
-// run
-$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt run"     
+```                         
+// 開始
+$ docker-compose up
 
-// sbt 更新時実行
-$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt reload"   
-
-// test
-$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt test"   
+// sbt 実行(docker-compose up している必要がある)
+$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt"  
 ```
 
 ## 備考
