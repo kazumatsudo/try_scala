@@ -1,5 +1,6 @@
 package hello
 
 object HelloWorld extends App {
-  printf("Hello, World\n")
+  val environment = sys.env.getOrElse("environment", "nothing")
+  printf(s"Hello, World\nenvironment: ${environment}\n")
 }
