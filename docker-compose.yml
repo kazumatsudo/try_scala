@@ -1,7 +1,11 @@
-version: '3'
+version: '3.7'
 
 services:
   scala-sbt:
     build:
-      context: .
-      dockerfile: container/scala-sbt/Dockerfile
+      context: ./docker/scala-sbt
+      dockerfile: Dockerfile
+    command: bash -c "cd /usr/app/ && sbt compile && sbt run"
+    container_name: scala-sbt
+    volumes:
+      - ./:/usr/app/
