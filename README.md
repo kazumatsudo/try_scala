@@ -1,3 +1,21 @@
+## やること
+
+```
+$ export COMPOSE_FILE=docker-compose.development.yml
+```
+
+## 実行
+
+```
+// run
+$ docker-compose exec scala-sbt bash -c "cd /usr/app/ && sbt compile && sbt run"
+```
+
+## 備考
+
+- staging の環境変数は ECS などで定義
+    - github に載せない
+
 ## 環境構築
 
 - Docker

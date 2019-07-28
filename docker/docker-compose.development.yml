@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  scala-sbt:
+    build:
+      context: ./scala-sbt
+      dockerfile: Dockerfile
+    container_name: scala-sbt
+    env_file:
+      - ../.env/development.env
+    tty: true
+    volumes:
+      - ../:/usr/app/
