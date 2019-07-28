@@ -1,4 +1,4 @@
-import org.scalatest._
+import org.scalatest.{ DiagrammedAssertions, FunSuite }
 
 class HelloWorldSpec extends FunSuite with DiagrammedAssertions {
   test("Hello should start with H") {
