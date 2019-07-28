@@ -1,6 +1,9 @@
 ## 環境構築
 
 - Docker
+```
+$ docker-compose up --build
+```
 
 ## ビルドツール
 
