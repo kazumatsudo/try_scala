@@ -5,7 +5,7 @@ services:
     build:
       context: ./scala-sbt
       dockerfile: Dockerfile
-    command: bash -c "cd /usr/app/ && sbt compile && sbt run"
+    command: bash -c "cd /usr/app/ && sbt clean compile run"
     container_name: scala-sbt
     volumes:
       - ../:/usr/app/
