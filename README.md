@@ -33,6 +33,10 @@ $ docker-compose up --build
 ## Lint
 
 - [scalafix](https://github.com/scalacenter/scalafix/)
+    - TODO: .scalafix.conf の編集
+
+# コードフォーマッタ
+- [Scalafmt](https://scalameta.org/scalafmt/)
 
 ## テスト
 
